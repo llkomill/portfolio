@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0C0F">
+<title>Портфолио</title>
+<meta name="description" content="Портфолио разработчика сайтов">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..700&family=Unbounded:wght@200..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top" data-name></a>
+  <nav aria-label="Разделы">
+    <a href="#works">Работы</a>
+    <a href="#services">Услуги</a>
+    <a href="#tech">Стек</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Связаться</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="terrain" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <p class="status" id="status"></p>
+      <h1 id="headline"></h1>
+      <p class="sub" id="sub"></p>
+      <div class="cta">
+        <a class="btn" href="#works">Смотреть работы</a>
+        <a class="btn ghost" href="#contact">Обсудить проект</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <h2 class="rv">Избранные работы</h2>
+    <div class="stack" id="stack"></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="rv">Что я делаю</h2>
+    <div class="bento" id="bento"></div>
+  </section>
+
+  <section class="tech" id="tech">
+    <h2 class="rv">Стек</h2>
+    <div id="tech-list"></div>
+  </section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="c-card rv">
+    <h2>Контакты</h2>
+    <div id="contact-list"></div>
+  </div>
+  <div class="copy"><span data-name></span><span id="year"></span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
